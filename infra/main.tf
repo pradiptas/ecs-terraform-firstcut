@@ -18,7 +18,7 @@ module "ecs" {
 
   container_insights = true
 
-  capacity_providers = ["FARGATE", "FARGATE_SPOT"]
+  capacity_providers = var.capacity_providers
 
   default_capacity_provider_strategy = [
     {
