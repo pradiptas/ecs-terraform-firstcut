@@ -1,0 +1,1 @@
+ecs_cluster_name = "ecs-cluster-pradipta-02"

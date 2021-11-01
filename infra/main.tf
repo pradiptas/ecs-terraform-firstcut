@@ -14,7 +14,7 @@ module "ecs" {
   source = "terraform-aws-modules/ecs/aws"
   #create_ecs = false
 
-  name = "ecs-cluster-pradipta-terraform-01"
+  name = var.ecs_cluster_name
 
   container_insights = true
 
