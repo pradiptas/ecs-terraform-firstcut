@@ -34,3 +34,8 @@ workflows:
               only: main
           requires:
             - review-terraform
+      #### terraform destroy code block ####
+      # - terraform/destroy:
+      #     path: ./infra
+      #     requires:
+      #       - terraform/apply

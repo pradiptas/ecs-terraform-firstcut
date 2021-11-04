@@ -4,10 +4,17 @@ terraform {
       source = "hashicorp/aws"
     }
   }
+
+  backend "s3" {
+    bucket = "pradipta-s3-tfstate"
+    key    = "platform.tfstate"
+    region = "us-west-2"
+  }
 }
 
 provider "aws" {
   region = "us-west-2"
+  version = "~> 2.0"
 }
 
 module "ecs" {
