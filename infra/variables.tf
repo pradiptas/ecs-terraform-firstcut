@@ -9,3 +9,9 @@ variable "capacity_providers" {
   type        = list(string)
   default     = []
 }
+
+variable "resource_tags" {
+  description = "AWS Resource Tags"
+  type        = map(string)
+  default     = {}
+}
