@@ -32,7 +32,5 @@ module "ecs" {
     }
   ]
 
-  tags = {
-    Environment = "Development"
-  }
+  tags = var.resource_tags
 }
