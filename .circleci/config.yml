@@ -12,8 +12,8 @@ workflows:
           checkout: true
           context: terraform
           path: ./infra
-          requires:
-            - terraform/fmt
+          # requires:
+          #   - terraform/fmt
       - terraform/plan:
           checkout: true
           context: terraform
