@@ -1,4 +1,4 @@
-ecs_cluster_name   = "ecs-cluster-pradipta-05"
+ecs_cluster_name   = "ecs-cluster-pradipta-06"
 capacity_providers = ["FARGATE", "FARGATE_SPOT"]
 resource_tags = {
   "Environment"  = "Development"
